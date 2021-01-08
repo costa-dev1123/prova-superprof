@@ -1,0 +1,1 @@
+export const basePath = 'https://www.extremelot.eu/'

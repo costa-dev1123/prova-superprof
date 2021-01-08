@@ -1,0 +1,16 @@
+<h1>HackLot!</h1>
+<p *ngIf="currentUser">
+    Benvenuto: {{currentUser}}
+</p>
+
+<ul>
+    <li>
+        <a routerLink="/admin">Admin</a>
+    </li>
+    <li>
+        <a routerLink="/login">Login</a>
+    </li>
+    <li *ngIf="isLoggedin">
+        <button (click)="logout()">Logout</button>
+    </li>
+</ul>

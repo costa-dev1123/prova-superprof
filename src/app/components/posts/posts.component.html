@@ -1,0 +1,5 @@
+<ul class="list-group">
+    <li [routerLink]="['/post', p.id, p.title, p.userId]" class="list-group-item" *ngFor="let p of posts">
+        {{p.title}}
+    </li>
+</ul>
